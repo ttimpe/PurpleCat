@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F625A1CA17AA29FA0057C842 /* darwin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F625A1C917AA286C0057C842 /* darwin.ttf */; };
+		F6B8FD0E1795241300428B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD0D1795241300428B81 /* Foundation.framework */; };
+		F6B8FD101795241300428B81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD0F1795241300428B81 /* CoreGraphics.framework */; };
+		F6B8FD121795241300428B81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD111795241300428B81 /* UIKit.framework */; };
+		F6B8FD181795241300428B81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6B8FD161795241300428B81 /* InfoPlist.strings */; };
+		F6B8FD1A1795241300428B81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B8FD191795241300428B81 /* main.m */; };
+		F6B8FD1E1795241300428B81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B8FD1D1795241300428B81 /* AppDelegate.m */; };
+		F6B8FD201795241300428B81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B8FD1F1795241300428B81 /* Images.xcassets */; };
+		F6B8FD271795241300428B81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD261795241300428B81 /* XCTest.framework */; };
+		F6B8FD281795241300428B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD0D1795241300428B81 /* Foundation.framework */; };
+		F6B8FD291795241300428B81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD111795241300428B81 /* UIKit.framework */; };
+		F6B8FD311795241300428B81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6B8FD2F1795241300428B81 /* InfoPlist.strings */; };
+		F6B8FD331795241300428B81 /* PurpleCatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B8FD321795241300428B81 /* PurpleCatTests.m */; };
+		F6B8FD3E1795246600428B81 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B8FD3D1795243B00428B81 /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6B8FD2A1795241300428B81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6B8FD021795241300428B81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6B8FD091795241300428B81;
+			remoteInfo = PurpleCat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F625A1C917AA286C0057C842 /* darwin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = darwin.ttf; sourceTree = "<group>"; };
+		F6B8FD0A1795241300428B81 /* PurpleCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B8FD0D1795241300428B81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6B8FD0F1795241300428B81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6B8FD111795241300428B81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6B8FD151795241300428B81 /* PurpleCat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PurpleCat-Info.plist"; sourceTree = "<group>"; };
+		F6B8FD171795241300428B81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6B8FD191795241300428B81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6B8FD1B1795241300428B81 /* PurpleCat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PurpleCat-Prefix.pch"; sourceTree = "<group>"; };
+		F6B8FD1C1795241300428B81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6B8FD1D1795241300428B81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6B8FD1F1795241300428B81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6B8FD251795241300428B81 /* PurpleCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurpleCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B8FD261795241300428B81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F6B8FD2E1795241300428B81 /* PurpleCatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PurpleCatTests-Info.plist"; sourceTree = "<group>"; };
+		F6B8FD301795241300428B81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6B8FD321795241300428B81 /* PurpleCatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurpleCatTests.m; sourceTree = "<group>"; };
+		F6B8FD3C1795243B00428B81 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F6B8FD3D1795243B00428B81 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6B8FD071795241300428B81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B8FD101795241300428B81 /* CoreGraphics.framework in Frameworks */,
+				F6B8FD121795241300428B81 /* UIKit.framework in Frameworks */,
+				F6B8FD0E1795241300428B81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B8FD221795241300428B81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B8FD271795241300428B81 /* XCTest.framework in Frameworks */,
+				F6B8FD291795241300428B81 /* UIKit.framework in Frameworks */,
+				F6B8FD281795241300428B81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6B8FD011795241300428B81 = {
+			isa = PBXGroup;
+			children = (
+				F6B8FD131795241300428B81 /* PurpleCat */,
+				F6B8FD2C1795241300428B81 /* PurpleCatTests */,
+				F6B8FD0C1795241300428B81 /* Frameworks */,
+				F6B8FD0B1795241300428B81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6B8FD0B1795241300428B81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8FD0A1795241300428B81 /* PurpleCat.app */,
+				F6B8FD251795241300428B81 /* PurpleCatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6B8FD0C1795241300428B81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8FD0D1795241300428B81 /* Foundation.framework */,
+				F6B8FD0F1795241300428B81 /* CoreGraphics.framework */,
+				F6B8FD111795241300428B81 /* UIKit.framework */,
+				F6B8FD261795241300428B81 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6B8FD131795241300428B81 /* PurpleCat */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8FD1C1795241300428B81 /* AppDelegate.h */,
+				F6B8FD1D1795241300428B81 /* AppDelegate.m */,
+				F6B8FD1F1795241300428B81 /* Images.xcassets */,
+				F6B8FD141795241300428B81 /* Supporting Files */,
+				F6B8FD3C1795243B00428B81 /* MainViewController.h */,
+				F6B8FD3D1795243B00428B81 /* MainViewController.m */,
+			);
+			path = PurpleCat;
+			sourceTree = "<group>";
+		};
+		F6B8FD141795241300428B81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F625A1C917AA286C0057C842 /* darwin.ttf */,
+				F6B8FD151795241300428B81 /* PurpleCat-Info.plist */,
+				F6B8FD161795241300428B81 /* InfoPlist.strings */,
+				F6B8FD191795241300428B81 /* main.m */,
+				F6B8FD1B1795241300428B81 /* PurpleCat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B8FD2C1795241300428B81 /* PurpleCatTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8FD321795241300428B81 /* PurpleCatTests.m */,
+				F6B8FD2D1795241300428B81 /* Supporting Files */,
+			);
+			path = PurpleCatTests;
+			sourceTree = "<group>";
+		};
+		F6B8FD2D1795241300428B81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8FD2E1795241300428B81 /* PurpleCatTests-Info.plist */,
+				F6B8FD2F1795241300428B81 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6B8FD091795241300428B81 /* PurpleCat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6B8FD361795241300428B81 /* Build configuration list for PBXNativeTarget "PurpleCat" */;
+			buildPhases = (
+				F6B8FD061795241300428B81 /* Sources */,
+				F6B8FD071795241300428B81 /* Frameworks */,
+				F6B8FD081795241300428B81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PurpleCat;
+			productName = PurpleCat;
+			productReference = F6B8FD0A1795241300428B81 /* PurpleCat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6B8FD241795241300428B81 /* PurpleCatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6B8FD391795241300428B81 /* Build configuration list for PBXNativeTarget "PurpleCatTests" */;
+			buildPhases = (
+				F6B8FD211795241300428B81 /* Sources */,
+				F6B8FD221795241300428B81 /* Frameworks */,
+				F6B8FD231795241300428B81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6B8FD2B1795241300428B81 /* PBXTargetDependency */,
+			);
+			name = PurpleCatTests;
+			productName = PurpleCatTests;
+			productReference = F6B8FD251795241300428B81 /* PurpleCatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6B8FD021795241300428B81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Apple Inc.";
+				TargetAttributes = {
+					F6B8FD241795241300428B81 = {
+						TestTargetID = F6B8FD091795241300428B81;
+					};
+				};
+			};
+			buildConfigurationList = F6B8FD051795241300428B81 /* Build configuration list for PBXProject "PurpleCat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6B8FD011795241300428B81;
+			productRefGroup = F6B8FD0B1795241300428B81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6B8FD091795241300428B81 /* PurpleCat */,
+				F6B8FD241795241300428B81 /* PurpleCatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6B8FD081795241300428B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F625A1CA17AA29FA0057C842 /* darwin.ttf in Resources */,
+				F6B8FD181795241300428B81 /* InfoPlist.strings in Resources */,
+				F6B8FD201795241300428B81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B8FD231795241300428B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B8FD311795241300428B81 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6B8FD061795241300428B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B8FD1E1795241300428B81 /* AppDelegate.m in Sources */,
+				F6B8FD1A1795241300428B81 /* main.m in Sources */,
+				F6B8FD3E1795246600428B81 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B8FD211795241300428B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B8FD331795241300428B81 /* PurpleCatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6B8FD2B1795241300428B81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6B8FD091795241300428B81 /* PurpleCat */;
+			targetProxy = F6B8FD2A1795241300428B81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6B8FD161795241300428B81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6B8FD171795241300428B81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6B8FD2F1795241300428B81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6B8FD301795241300428B81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6B8FD341795241300428B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6B8FD351795241300428B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6B8FD371795241300428B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PurpleCat/PurpleCat-Prefix.pch";
+				INFOPLIST_FILE = "PurpleCat/PurpleCat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6B8FD381795241300428B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PurpleCat/PurpleCat-Prefix.pch";
+				INFOPLIST_FILE = "PurpleCat/PurpleCat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6B8FD3A1795241300428B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PurpleCat.app/PurpleCat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PurpleCat/PurpleCat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PurpleCatTests/PurpleCatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F6B8FD3B1795241300428B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PurpleCat.app/PurpleCat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PurpleCat/PurpleCat-Prefix.pch";
+				INFOPLIST_FILE = "PurpleCatTests/PurpleCatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6B8FD051795241300428B81 /* Build configuration list for PBXProject "PurpleCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B8FD341795241300428B81 /* Debug */,
+				F6B8FD351795241300428B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6B8FD361795241300428B81 /* Build configuration list for PBXNativeTarget "PurpleCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B8FD371795241300428B81 /* Debug */,
+				F6B8FD381795241300428B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6B8FD391795241300428B81 /* Build configuration list for PBXNativeTarget "PurpleCatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B8FD3A1795241300428B81 /* Debug */,
+				F6B8FD3B1795241300428B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6B8FD021795241300428B81 /* Project object */;
+}
