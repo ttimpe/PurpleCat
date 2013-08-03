@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F625A1CA17AA29FA0057C842 /* darwin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F625A1C917AA286C0057C842 /* darwin.ttf */; };
+		F64AC63F17ADB12900F3D973 /* verbose.log in Resources */ = {isa = PBXBuildFile; fileRef = F64AC63E17ADB12900F3D973 /* verbose.log */; };
+		F64AC64217ADBB6300F3D973 /* RBVolumeButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = F64AC64117ADBB6300F3D973 /* RBVolumeButtons.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F6B8FD0E1795241300428B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD0D1795241300428B81 /* Foundation.framework */; };
 		F6B8FD101795241300428B81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD0F1795241300428B81 /* CoreGraphics.framework */; };
 		F6B8FD121795241300428B81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B8FD111795241300428B81 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		F625A1C917AA286C0057C842 /* darwin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = darwin.ttf; sourceTree = "<group>"; };
+		F64AC63E17ADB12900F3D973 /* verbose.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = verbose.log; sourceTree = "<group>"; };
+		F64AC64017ADBB6300F3D973 /* RBVolumeButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBVolumeButtons.h; sourceTree = "<group>"; };
+		F64AC64117ADBB6300F3D973 /* RBVolumeButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBVolumeButtons.m; sourceTree = "<group>"; };
 		F6B8FD0A1795241300428B81 /* PurpleCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurpleCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B8FD0D1795241300428B81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6B8FD0F1795241300428B81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +123,8 @@
 				F6B8FD141795241300428B81 /* Supporting Files */,
 				F6B8FD3C1795243B00428B81 /* MainViewController.h */,
 				F6B8FD3D1795243B00428B81 /* MainViewController.m */,
+				F64AC64017ADBB6300F3D973 /* RBVolumeButtons.h */,
+				F64AC64117ADBB6300F3D973 /* RBVolumeButtons.m */,
 			);
 			path = PurpleCat;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			children = (
 				F625A1C917AA286C0057C842 /* darwin.ttf */,
 				F6B8FD151795241300428B81 /* PurpleCat-Info.plist */,
+				F64AC63E17ADB12900F3D973 /* verbose.log */,
 				F6B8FD161795241300428B81 /* InfoPlist.strings */,
 				F6B8FD191795241300428B81 /* main.m */,
 				F6B8FD1B1795241300428B81 /* PurpleCat-Prefix.pch */,
@@ -228,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F625A1CA17AA29FA0057C842 /* darwin.ttf in Resources */,
+				F64AC63F17ADB12900F3D973 /* verbose.log in Resources */,
 				F6B8FD181795241300428B81 /* InfoPlist.strings in Resources */,
 				F6B8FD201795241300428B81 /* Images.xcassets in Resources */,
 			);
@@ -251,6 +260,7 @@
 				F6B8FD1E1795241300428B81 /* AppDelegate.m in Sources */,
 				F6B8FD1A1795241300428B81 /* main.m in Sources */,
 				F6B8FD3E1795246600428B81 /* MainViewController.m in Sources */,
+				F64AC64217ADBB6300F3D973 /* RBVolumeButtons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

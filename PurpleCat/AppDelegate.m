@@ -16,6 +16,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     MainViewController *mainVC = [[MainViewController alloc] init];
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+    
     self.window.rootViewController = mainVC;
     [self.window makeKeyAndVisible];
     return YES;

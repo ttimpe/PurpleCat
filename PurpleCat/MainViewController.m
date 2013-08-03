@@ -7,13 +7,16 @@
 
 #import "MainViewController.h"
 
-
+#import "RBVolumeButtons.h"
 @interface MainViewController () {
     int currentLine;
     NSString *verboseOutput;
     NSTimer *timer;
+    NSTimer *progressTimer;
     UIImageView *appleLogoView;
     float maxNumberOfLines;
+    UIProgressView *progressView;
+    
 }
 
 @end
@@ -33,13 +36,17 @@
 
 - (void)viewDidLoad
 {
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
     appleLogoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"apple-logo"]];
     [appleLogoView setFrame:self.view.frame];
     [appleLogoView setContentMode:UIViewContentModeCenter];
+    UITapGestureRecognizer *tapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showProgress)];
+    tapped.numberOfTapsRequired = 1;
+    [appleLogoView addGestureRecognizer:tapped];
+    
     [NSTimer scheduledTimerWithTimeInterval:2.0
                                      target:self
                                    selector:@selector(respring)
@@ -51,7 +58,7 @@
     textView = [[UITextView alloc] initWithFrame:CGRectOffset(self.view.frame,0,0)];
     textView.backgroundColor = [UIColor blackColor];
     textView.textColor = [UIColor whiteColor];
-    textView.font = [UIFont fontWithName:@"Menlo-Bold" size:11];
+    textView.font = [UIFont fontWithName:@"Menlo-Bold" size:10];
     CGSize helloSize = [@"Hello" sizeWithFont:textView.font];
     maxNumberOfLines = self.view.frame.size.height/helloSize.height;
     NSLog(@"Max number of lines is: %f", maxNumberOfLines);
@@ -63,8 +70,13 @@
     NSLog(@"tt0001m_: %@", [UIFont fontNamesForFamilyName:@"Menlo"]);
     [self.view addSubview:textView];
     [self.view addSubview:appleLogoView];
-
-    
+    RBVolumeButtons *volumeButtons = [[RBVolumeButtons alloc] init];
+    volumeButtons.upBlock = ^{
+        [timer invalidate];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"HELLO" message:@"HELLO" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles: nil];
+        [alert show];
+        
+    };
     
 }
 -(void)respring{
@@ -75,7 +87,9 @@
 }
 
 -(void)startScrollingVerboseOutput {
-    verboseOutput = [NSString stringWithContentsOfFile:@"/Users/tobias/verbose.log" encoding:NSUTF8StringEncoding error:nil];
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"verbose"
+                                                     ofType:@"log"];
+    verboseOutput = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSLog(@"Log has %i lines", [[verboseOutput componentsSeparatedByString:@"\n"] count]);
  //   NSLog(@"DUMP FILE: %@", verboseOutput);
     currentLine = 0;
@@ -87,7 +101,7 @@
     NSMutableArray *lines = [NSMutableArray arrayWithArray:[textView.text componentsSeparatedByString:@"\n"]];
     
     
-    if ([lines count] < maxNumberOfLines) {
+    if ([lines count] < maxNumberOfLines-1) {
         [lines addObject:line];
     }
     else {
@@ -123,6 +137,28 @@
     
 }
 
+-(void)showProgress {
+    [timer invalidate];
+    [textView removeFromSuperview];
+    NSLog(@"PROGRESS");
+    progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+    [progressView setFrame:CGRectMake(40, 300, 240, 20)];
+    progressTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(updateProgressBar) userInfo:nil repeats:YES];
+    [self.view addSubview:progressView];
+    
+    
+}
+-(void)updateProgressBar {
+    if (progressView.progress < 1) {
+        progressView.progress = progressView.progress + 0.01f;
+    }
+    else {
+        [progressTimer invalidate];
+        
+    }
+    
+    
+}
 -(void)finishBoot{
     exit(0);
 }
